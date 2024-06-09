@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  background: #1a1a1a;
+  padding: 0 50px;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  position: sticky;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  overflow: hidden;
+  align-items: center;
+  z-index: 999;
+  border-bottom: 0.5px solid #ffffff;
+}
+
+.dev_name {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.common_pd {
+  z-index: 1;
+}
+
+.header_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: #ffffff;
+}
+
+.fa-brands,
+.fa-regular {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* hero Sec */
+
+.home_sec {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero_sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.img_width {
+    flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero_img {
+  border-radius: 12px;
+  width: 370px;
+}
+
+.dev_heading {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  flex: 1;
+  gap: 1.5rem;
+}
+
+.rotate{
+ transform: rotate(45deg);   
+}
+
+.hero_contact{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icn_siz{
+    font-size: 28px;
+}
+
+.hero_h1{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.name_title{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+ .small{
+    display: inline;
+    font-size: 12px;
+    font-weight: 400;
+ }
+
+.btn_gen {
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    gap: .5rem;
+    font-weight: 700;
+}
+
+.mobile{
+    display: none;
+}
+
+.text_about{
+    margin-top: 0px;
+    line-height: 25.6px;
+}
+
+/* end of hero sec */
+
+/* Botton Navbar Css */
+
+.navbar {
+  border: 2px solid white;
+  width: 30%;
+  margin: auto;
+  border-radius: 12px;
+  bottom: 28px;
+  left: 0;
+  right: 0;
+  position: sticky;
+  overflow: hidden;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0 28px;
+}
+
+li a {
+  text-decoration: none;
+  color: wheat;
+}
+
+li {
+  list-style: none;
+}
+
+/* End Bottom Navbar CSS */
+
+/* Tab */
+
+@media screen and (max-width: 900px) {
+  .header_icons {
+    gap: 1rem;
+  }
+
+  .navbar {
+    width: 70%;
+  }
+
+  .hero_img {
+    width: 320px;
+  }
+
+  .hero_h1{
+    gap: 1rem;
+}
+
+
+
+.hero_sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .dev_heading {
+    gap: 1rem;
+  }
+  
+  .hero_contact{
+   gap: 1rem;
+  }
+  
+  .icn_siz{
+      font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 700px) {
+  .header_icons {
+    gap: 1rem;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .hero_img {
+    width: 100%;
+  }
+
+  .hero_h1{
+    gap: 1rem;
+}
+
+.header_icons{
+    display: none;
+}
+
+
+
+.hero_sec {
+    display: flex;
+flex-direction: column;
+gap: 2rem;
+  }
+  
+  .dev_heading {
+    gap: .2rem;
+  }
+  
+  .hero_contact{
+   gap: 1rem;
+  }
+  
+  .icn_siz{
+      font-size: 18px;
+  }
+
+  .img_width{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .desk{
+    display: none;
+  }
+
+  .mobile{
+    display: flex;
+    justify-content: center;
+  }
+}
